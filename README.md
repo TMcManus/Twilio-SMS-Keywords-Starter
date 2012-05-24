@@ -12,16 +12,17 @@ The goal of this script is to provide a simple, easy to understand framework for
 8. Send a text message to your number.
 ##Modifying the Application##
 To add a new keyword, add the following to the section labeled `##Controller##`:
-<code>    
-    function keyword(){
-    	/* Any other logic you need to execute goes here. */
-    	$response = new Services_Twilio_Twiml();
-    	$response->sms('The text you want your keyword to show. Under 160 characters');
-    	echo $response;
-    }
-</code>
+```
+function keyword(){
+	/* Any other logic you need to execute goes here. */
+	$response = new Services_Twilio_Twiml();
+	$response->sms('The text you want your keyword to show. Under 160 characters');
+	echo $response;
+}
+```
 Then add an entry to the section labeled `##Router##`:
-        case 'keyword':
-            keyword();
-            break;
-
+```
+    case 'keyword':
+        keyword();
+        break;
+```
