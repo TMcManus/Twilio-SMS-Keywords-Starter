@@ -15,10 +15,10 @@ The goal of this script is to provide a simple, easy to understand framework for
 ##Modifying the Application##
 To add a new keyword, add the following to the section labeled ##Controller##:
 ```function keyword(){
-	/* Any other logic you need to execute goes here. */
-	$response = new Services_Twilio_Twiml();
-	$response->sms('The text you want your keyword to show. Under 160 characters');
-	echo $response;
+    /* Any other logic you need to execute goes here. */
+    $response = new Services_Twilio_Twiml();
+    $response->sms('The text you want your keyword to show. Under 160 characters');
+    echo $response;
 }
 ```
 
