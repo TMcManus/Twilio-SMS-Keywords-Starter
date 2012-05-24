@@ -1,6 +1,6 @@
-====SMS Keywords with Twilio====
+####SMS Keywords with Twilio####
 The goal of this script is to provide a simple, easy to understand framework for developing an SMS application that uses SMS keywords to navigate.
-==Installing==
+##Installing##
 1. Download the zipped file from Github.
 2. Unzip it and rename it `keywords`.
 3. Download the [Twilio PHP Helper Library](https://github.com/twilio/twilio-php/zipball/3.2.3).
@@ -10,7 +10,7 @@ The goal of this script is to provide a simple, easy to understand framework for
 6. Buy an SMS enabled Twilio phone number.
 7. Paste the URL of `keywords.php` in the SMS Request URL for your Twilio number. Don't forget to save.
 8. Send a text message to your number.
-==Modifying the Application==
+##Modifying the Application##
 To add a new keyword, add the following to the section labeled `##Controller##`:
     function keyword(){
     	/* Any other logic you need to execute goes here. */
