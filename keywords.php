@@ -1,5 +1,7 @@
 <?php
 
+// TODO: People want tracking on keywords.
+
 /**
  * Include twilio-php, the offical Twilio PHP Helper Library, which can be found at
  * http://www.twilio.com/docs/libraries
@@ -9,7 +11,7 @@ include('Services/Twilio.php');
 /* ## Controller ## */
 function index(){
 	$response = new Services_Twilio_Twiml();
-	$response->sms('Reply with one of the following keywords: [orange], [pear], [lychee], [longan].');
+	$response->sms('Reply with one of the following keywords: <orange>, <pear>, <lychee>, <longan>.');
 	echo $response;
 }
 
